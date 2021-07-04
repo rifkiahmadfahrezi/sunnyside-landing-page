@@ -1,0 +1,29 @@
+// Primary colors
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkCyan: hsl(167, 40%, 24%);
+$darkBlue: hsl(198, 62%, 26%);
+$darkModCyan: hsl(168, 34%, 41%);
+
+// Neutral
+$desaturetedBlue: hsl(212, 27%, 19%);
+$darkGrayish: hsl(213, 9%, 39%);
+$grayish: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+// fonts
+@font-face {
+	font-family: 'Fraunces-Black', serif;
+	src: url('../fonts/Fraunces_9pt-Black.ttf');
+}
+@font-face {
+	font-family: 'Fraunces-Bold', serif;
+	src: url('../fonts/Fraunces_9pt-Bold.ttf');
+}
+@font-face {
+	font-family: 'Barlow', sans-serif;
+	src: url('../fonts/Barlow-SemiBold.ttf');
+}
+$frauncesBlack: 'Fraunces-Black', 'Fraunces', serif;
+$frauncesBold: 'Fraunces-Bold', 'Fraunces', serif;
+$barlow: 'Barlow', sans-serif;

@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@font-face {
+  font-family: "Fraunces-Black", serif;
+  src: url("../fonts/Fraunces_9pt-Black.ttf");
+}
+@font-face {
+  font-family: "Fraunces-Bold", serif;
+  src: url("../fonts/Fraunces_9pt-Bold.ttf");
+}
+@font-face {
+  font-family: "Barlow", sans-serif;
+  src: url("../fonts/Barlow-SemiBold.ttf");
+}
+:root {
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 25px;
+  position: fixed;
+  width: 100vw;
+  align-items: center;
+}
+nav .brand {
+  width: 150px;
+}
+nav .navbar-menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navbar-menu a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9rem;
+  color: white;
+}
+nav .navbar-menu .nav-btn {
+  background-color: white;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.7rem;
+  border-radius: 20px;
+  color: #23303e;
+  font-family: "Fraunces-Bold", "Fraunces", serif;
+  transition: 0.3s;
+}
+nav .navbar-menu .nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+header {
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+header figure {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 25%;
+}
+header figure h1 {
+  color: white;
+  font-size: 2.8rem;
+}
+header figure img {
+  position: absolute;
+  transform: translateY(150%);
+  max-width: 50px;
+}
+
+#main-section .row {
+  width: 100%;
+  display: flex;
+}
+#main-section .row:nth-child(1) .text a {
+  position: relative;
+  color: #23303e;
+  font-family: "Fraunces-Bold", "Fraunces", serif;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+#main-section .row:nth-child(1) .text a:after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+  background-color: #ffe761;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.2s;
+}
+#main-section .row:nth-child(1) .text a:hover:after {
+  background-color: #fad400;
+}
+#main-section .row:nth-child(2) .text a {
+  position: relative;
+  color: #23303e;
+  font-family: "Fraunces-Bold", "Fraunces", serif;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+#main-section .row:nth-child(2) .text a:after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+  background-color: #ffd2cc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.2s;
+}
+#main-section .row:nth-child(2) .text a:hover:after {
+  background-color: #fe7867;
+}
+#main-section section {
+  width: 50%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#main-section section.text {
+  padding: 25px;
+}
+#main-section section.text h1 {
+  font-family: "Fraunces-Black", "Fraunces", serif;
+  color: #23303e;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+#main-section section.text p {
+  font-family: "Barlow", sans-serif;
+  color: #5a636c;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+#main-section section img {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+#main-section section figcaption {
+  position: absolute;
+  width: 50%;
+  margin-top: 180px;
+  text-align: center;
+}
+#main-section section figcaption h3 {
+  margin-bottom: 10px;
+  font-family: "Fraunces-Bold", "Fraunces", serif;
+  font-size: 1.5rem;
+}
+#main-section section figcaption p {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  width: 60%;
+}
+#main-section section #caption_1 {
+  color: #25564b;
+}
+#main-section section #caption_2 {
+  color: #19536b;
+}
+
+#testimonial {
+  padding: 70px 0;
+}
+#testimonial .title {
+  text-align: center;
+  color: #a7abae;
+  font-family: "Fraunces-Black", "Fraunces", serif;
+}
+#testimonial .testimonial-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+#testimonial .testimonial-wrapper .card {
+  width: 30%;
+  margin: 30px auto;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+#testimonial .testimonial-wrapper .card .profile-image {
+  width: 70px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+#testimonial .testimonial-wrapper .card .card-body {
+  color: #5a636c;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.95rem;
+}
+#testimonial .testimonial-wrapper .card .card-footer h5 {
+  font-family: "Fraunces-Black", "Fraunces", serif;
+}
+#testimonial .testimonial-wrapper .card .card-footer small {
+  color: #a7abae;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+#gallery img {
+  width: calc(100% / 4);
+}
+
+footer {
+  min-height: 40vh;
+  background-color: #458c7e;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+footer .footer-menu {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+footer .footer-menu a {
+  color: #25564b;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  transition: 0.3s;
+}
+footer .footer-menu a:hover {
+  color: white;
+}
+footer .footer-title {
+  color: #25564b;
+  font-family: "Barlow", sans-serif;
+}
+footer .socials a {
+  margin: 0 15px;
+  color: #25564b;
+  font-size: 1.4em;
+  transition: 0.3s;
+}
+footer .socials a:hover {
+  fill: white;
+  color: white;
+}
+
+.burger-menu {
+  color: white;
+  font-size: 1.9em;
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  nav .navbar-menu {
+    position: fixed;
+    top: 70px !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90% !important;
+    margin: 0 auto;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    background-color: white !important;
+    z-index: 999 !important;
+    padding: 20px 10px;
+    transition: all 0.5s;
+  }
+  nav .navbar-menu.active {
+    top: 100px !important;
+    pointer-events: inherit;
+    opacity: inherit;
+  }
+  nav .navbar-menu a {
+    color: #23303e !important;
+    margin: 10px auto !important;
+  }
+  nav .navbar-menu a.nav-btn {
+    background-color: #fad400;
+  }
+  nav .navbar-menu:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid white;
+    transform: rotateX(180deg);
+    position: absolute;
+    top: -98px !important;
+    right: 0;
+  }
+
+  .burger-menu {
+    display: inherit;
+  }
+
+  #main-section .row {
+    flex-direction: column-reverse;
+  }
+  #main-section .row section {
+    width: 100%;
+  }
+  #main-section .row section h1 {
+    font-size: 2rem;
+  }
+  #main-section .row section.text {
+    text-align: center;
+    min-height: 300px;
+  }
+  #main-section .row section.text a {
+    text-align: center;
+    margin: 10px auto;
+  }
+  #main-section .row:nth-child(2),
+#main-section .row:nth-child(3) {
+    flex-direction: column !important;
+  }
+  #main-section .row:nth-child(3) section figcaption {
+    text-align: center;
+    width: 100%;
+  }
+
+  #testimonial .testimonial-wrapper {
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  #testimonial .testimonial-wrapper .card {
+    width: 90%;
+    margin: 25px auto;
+  }
+  #testimonial .testimonial-wrapper .card .card-body {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #gallery img {
+    width: 50%;
+  }
+
+  footer .footer-menu {
+    width: 75% !important;
+  }
+}
+@media screen and (max-width: 755px) {
+  nav .navbar-menu {
+    width: 50%;
+  }
+
+  footer .footer-menu {
+    width: 45%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

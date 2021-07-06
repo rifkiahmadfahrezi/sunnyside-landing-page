@@ -4,4 +4,4 @@
 
 Challenge from [Frontend mentor](https://www.frontendmentor.io)
 
-**[view demo]**(https://rifkiahmadfahrezi.github.io/sunnyside-landing-page) 
+[view demo](https://rifkiahmadfahrezi.github.io/sunnyside-landing-page) 

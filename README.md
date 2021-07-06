@@ -3,3 +3,5 @@
 ![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
 
 Challenge from [Frontend mentor](https://www.frontendmentor.io)
+
+**[view demo]**(https://rifkiahmadfahrezi.github.io/sunnyside-landing-page) 

@@ -74,18 +74,15 @@ header figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 25%;
+  padding-top: 20vh;
 }
 header figure h1 {
+  margin-top: 70px;
   color: white;
   font-size: 2.8rem;
 }
 header figure img {
-  position: absolute;
-  transform: translateY(150%);
+  margin-top: 30px;
   max-width: 50px;
 }
 
@@ -94,11 +91,12 @@ header figure img {
   display: flex;
 }
 #main-section .row:nth-child(1) .text a {
-  position: relative;
+  text-align: center;
   color: #23303e;
   font-family: "Fraunces-Bold", "Fraunces", serif;
   text-decoration: none;
   font-size: 0.9rem;
+  position: relative;
 }
 #main-section .row:nth-child(1) .text a:after {
   content: "";
@@ -107,6 +105,7 @@ header figure img {
   border-radius: 20px;
   background-color: #ffe761;
   position: absolute;
+  display: block;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -166,12 +165,13 @@ header figure img {
   width: 100%;
   object-position: center;
   object-fit: cover;
+  overflow: hidden;
 }
 #main-section section figcaption {
   position: absolute;
-  width: 50%;
-  margin-top: 180px;
+  margin-top: 130px;
   text-align: center;
+  width: 50%;
 }
 #main-section section figcaption h3 {
   margin-bottom: 10px;
@@ -279,11 +279,28 @@ footer .socials a:hover {
 }
 
 .burger-menu {
-  color: white;
-  font-size: 1.9em;
   display: none;
-  z-index: 999;
-  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.burger-menu .menu-bar {
+  transition: 0.3s;
+  border-radius: 6px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+.burger-menu .menu-bar.active-menu:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 7px);
+}
+.burger-menu .menu-bar.active-menu:nth-child(2) {
+  transform: scale(0);
+}
+.burger-menu .menu-bar.active-menu:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -7px);
 }
 
 @media screen and (max-width: 576px) {
@@ -293,7 +310,7 @@ footer .socials a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 90% !important;
+    width: calc(100% - 50px) !important;
     margin: 0 auto;
     border-radius: 5px;
     pointer-events: none;
@@ -315,21 +332,25 @@ footer .socials a:hover {
   nav .navbar-menu a.nav-btn {
     background-color: #fad400;
   }
+  nav .navbar-menu a.nav-btn:hover {
+    background-color: #ffe761;
+  }
   nav .navbar-menu:after {
     content: "";
     width: 0;
+    z-index: -1;
     height: 0;
-    border-left: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    border-top: 50px solid white;
+    border-left: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+    border-top: 45px solid white;
     transform: rotateX(180deg);
     position: absolute;
-    top: -98px !important;
+    top: -80px !important;
     right: 0;
   }
 
   .burger-menu {
-    display: inherit;
+    display: flex;
   }
 
   #main-section .row {
